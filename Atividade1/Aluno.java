@@ -1,0 +1,28 @@
+package Atividade1;
+
+public class Aluno{
+    private String nome;
+    private String curso;
+    private String matricula;
+
+    public String getMatricula() {
+        return matricula;
+    }
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public String getCurso() {
+        return curso;
+    }
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+    @Override
+    public String toString(){
+        return "O nome do aluno pesquisado é " +this.nome+"e a sua matricula é"+this.curso;
+    }
+}
+
