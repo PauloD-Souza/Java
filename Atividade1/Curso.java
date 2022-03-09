@@ -6,7 +6,7 @@ public class Curso {
     private int codigoCurso;
     
     public String getNome() {
-        return nome;
+        return Nome;
     }
     public void setNome(String nome) {
         this.nome = nome;
