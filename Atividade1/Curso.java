@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Curso {
     private String nome;
     private String descricao;
-    private Integer codigoCurfffso;
+    private Integer codigoCurso;
     List<Aluno> alunos = new ArrayList<>();
     public Curso (){
 
