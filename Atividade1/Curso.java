@@ -1,10 +1,27 @@
 package Atividade1;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Curso {
     private String nome;
     private String descricao;
-    private int codigoCurso;
-    
+    private Integer codigoCurso;
+    List<Aluno> alunos = new ArrayList<>();
+    public Curso (){
+
+    }   
+    public Curso(String nome,String descricao,Integer codigoCurso){
+        this.nome = nome;
+        this.descricao = descricao;
+        this.codigoCurso = codigoCurso;
+
+    }
+    public void matricularAluno (Aluno aluno){
+        alunos.add(aluno);
+    }
+    public String getAluno(String matricula){
+        return matricula;
+    }
     public String getNome() {
         return nome;
     }

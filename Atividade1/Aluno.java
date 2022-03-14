@@ -2,9 +2,13 @@ package Atividade1;
 
 public class Aluno{
     private String nome;
-    private String curso;
+    private Curso curso;
     private String matricula;
 
+    public Aluno(String nome, String matricula){
+        this.nome = nome;
+        this.matricula = matricula;
+    }
     public String getMatricula() {
         return matricula;
     }
@@ -14,10 +18,10 @@ public class Aluno{
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getCurso() {
+    public Curso getCurso() {
         return curso;
     }
-    public void setCurso(String curso) {
+    public void setCurso(Curso curso) {
         this.curso = curso;
     }
     @Override
