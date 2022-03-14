@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Curso {
     private String nome;
     private String descricao;
-    private Integer codigoCurso;
+    private Integer codigoCurfffso;
     List<Aluno> alunos = new ArrayList<>();
     public Curso (){
 
@@ -21,6 +21,7 @@ public class Curso {
     }
     public String getAluno(String matricula){
         return matricula;
+
     }
     public String getNome() {
         return nome;
