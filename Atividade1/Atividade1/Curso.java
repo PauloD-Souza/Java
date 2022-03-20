@@ -1,26 +1,27 @@
 package Atividade1;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Curso {
     private String nome;
     private String descricao;
     private Integer codigoCurso;
-    List<Aluno> alunos = new ArrayList<>();
-    public Curso (){
-
-    }   
+    private HashMap <String , Aluno> NovosAlunos;
+       
     public Curso(String nome,String descricao,Integer codigoCurso){
         this.nome = nome;
         this.descricao = descricao;
         this.codigoCurso = codigoCurso;
+        NovosAlunos = new HashMap <>();
 
     }
-    public void matricularAluno (Aluno aluno){
-        alunos.add(aluno);
+    public void matriculaAluno (Aluno aluno){
+        aluno.setCurso(this);
+        NovosAlunos.put(aluno.getMatricula(),aluno);
     }
-    public String getAluno(String matricula){
-        return matricula;
+    public Aluno getAluno(String matricula){
+        return NovosAlunos.get(matricula);
 
     }
     public String getNome() {
@@ -41,10 +42,10 @@ public class Curso {
     public void setCodigoCurso(int codigoCurso) {
         this.codigoCurso = codigoCurso;
     }
+
+    
     @Override
     public String toString(){
         return "O curso escolhido foi "+this.nome+"Com o código " +this.codigoCurso;
     }
-
-
 }
